@@ -40,18 +40,23 @@
             </div>
           </div>
           <div class="header-right navbar-center justify-content-md-center">
-            <span class="navlink"><a href="index.html">Work</a></span><span class="navlink"><a href="about.html">About</a></span
-            ><span class="navlink"><a href="news.html">News</a></span><span class="navlink"><a href="contact.html">Contact</a></span
-            ><span class="navlink"><a href="CV.pdf">CV</a></span>
+            <span class="navlink"><a href="index.html">Work</a></span
+              ><span class="navlink"><a href="about.html">About</a></span
+              ><span class="navlink"><a href="news.html">News</a></span
+              ><span class="navlink"><a href="contact.html">Contact</a></span
+              ><span class="navlink"><a href="CV.pdf">CV</a></span>
           </div>
           <div class="container">
             <a href="index.html"> </a>
             <div class="row justify-content-md-center image-container">
-              <div class="col col-11 col-lg-4 bio-text">
-                <p>Kara Beth Rasure is a visual artist and designer based in Bloomington, IN.</p>
-              </div>
             </div>
             <div class="row justify-content-md-center">
+              <!-- <div class="col col-lg-7 gallery-labeled">
+                <iframe frameborder="0" height="910" scrolling="no" width="612" allowtransparency="true" src="https://www.instagram.com/reel/CsLvyKQr1At/embed/"></iframe>
+              </div>
+              <div class="col col-lg-7 gallery-labeled">
+                <iframe frameborder="0" height="910" scrolling="no" width="612" allowtransparency="true" src="https://www.instagram.com/reel/CxTaOjROosI/embed"></iframe>
+              </div> -->
             </div>
 
             <div style="text-align: center">
@@ -64,18 +69,14 @@
             <br /><br />
             <p class="m-0 small">Copyright © Kara Beth Rasure 2020-2024</p>
           </footer>
+          
         </body>
       </html>
 
       <script>
-         $(document).ready(function () {
-          var i = Math.floor(Math.random() * 2) + 1
-          $('.image-container').prepend(
-          '<div class="col col-11 col-lg-'+ (i==1 ? '6' : '4') + ' gallery-labeled"><img class="gallery-img" src="img/about/' +
-            i +
-            '.jpg" /></div>',
-        )
-         })
+        $(document).ready(function () {
+          generateGallery("kinetic");
+        })
     </script>
   </head>
 </html>
